@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 3 - Tables and Hyperlinks</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <!-- r1c1 with image, spans 2 rows and 2 columns -->
+            <td rowspan="2" colspan="2">
+                <img src="/api/placeholder/100/100" alt="Your choice image">
+            </td>
+            <!-- r1c3 with favorite color -->
+            <td bgcolor="lightblue">r1c3</td>
+            <!-- r1c4 with positive affirmation, spans 2 rows -->
+            <td rowspan="2">
+                <font face="Arial" color="purple">
+                    Believe in yourself!
+                </font>
+            </td>
+            <!-- r1c5 spans 2 rows and 2 columns -->
+            <td rowspan="2" colspan="2">r1c5</td>
+        </tr>
+        <tr>
+            <!-- r2c3 with email link -->
+            <td rowspan="2">
+                <a href="mailto:youremail@example.com">Email Me</a>
+            </td>
+        </tr>
+        <tr>
+            <!-- r3c1 with link to home.html -->
+            <td colspan="2">
+                <a href="home.html">Go to Home</a>
+            </td>
+            <!-- r3c4 spans 2 columns with image link -->
+            <td colspan="2">
+                <a href="https://example.com">
+                    <img src="/api/placeholder/100/50" alt="Linked image">
+                </a>
+            </td>
+            <td>r3c6</td>
+        </tr>
+        <tr>
+            <!-- r4c1 with favorite color -->
+            <td bgcolor="lightblue">r4c1</td>
+            <!-- r4c2 with favorite color, spans 2 columns -->
+            <td colspan="2" bgcolor="lightblue">r4c2</td>
+            <!-- r4c4 spans 2 rows -->
+            <td rowspan="2">r4c4</td>
+            <!-- r4c5 spans 2 columns -->
+            <td colspan="2">r4c5</td>
+        </tr>
+        <tr>
+            <!-- r5c1 with favorite color, spans 2 rows and 2 columns -->
+            <td rowspan="2" colspan="2" bgcolor="lightblue">r5c1</td>
+            <!-- r5c3 with positive affirmation, spans 2 rows -->
+            <td rowspan="2">
+                <font face="Times New Roman" color="green">
+                    Stay positive!
+                </font>
+            </td>
+            <!-- r5c5 with positive affirmation, spans 2 rows and 2 columns -->
+            <td rowspan="2" colspan="2">
+                <font face="Verdana" color="blue">
+                    Dream big!
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <!-- r6c4 with positive affirmation -->
+            <td>
+                <font face="Georgia" color="red">
+                    Never give up!
+                </font>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
