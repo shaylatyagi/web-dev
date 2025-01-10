@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity 10: List</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    /* Course List Styles */
+    ol li {
+      margin: 10px 0;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    /* Differentiating Theory and Lab Courses */
+    .theory {
+      background-color: #BBDEFB; /* Light Blue for Theory Classes */
+      color: blue;
+      font-weight: bold;
+    }
+
+    .lab {
+      background-color: #FFCCBC; /* Light Orange for Lab Classes */
+      color: red;
+      font-style: italic;
+    }
+
+    /* Programming Languages with Ratings */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    ul li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    /* Review Section */
+    dl {
+      margin: 20px 0;
+    }
+
+    dt {
+      color: #4CAF50;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    dd {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>List of Courses in Winter Semester 2024-2025</h1>
+  <ol>
+    <li class="lab">Design and Analysis of Algorithms</li>
+    <li class="lab">Microprocessors and Microcontrollers</li>
+    <li class="theory">Computer Architecture and Organisation</li>
+    <li class="lab">Probability and Statistics</li>
+    <li class="theory">Theory of Computation</li>
+    <li class="lab">Web Programming</li>
+  </ol>
+
+  <h2>Programming Languages and Ratings</h2>
+  <ul>
+    <li><img src="python.png" alt="Python Logo"> Python - <strong>10/10</strong></li>
+    <li><img src="c.png" alt="C Logo"> C/C++ - <strong>10/10</strong></li>
+    <li><img src="java.png" alt="Java Logo"> Java - <strong>10/10</strong></li>
+    <li><img src="r.png" alt="R Logo"> R - <strong>10/10</strong></li>
+  </ul>
+
+  <h3>My Reviews - Descriptive List</h3>
+  <dl>
+    <dt><strong>Movie:</strong> Substance</dt>
+    <dd>This story depicts a recent growing trend of an unhealthy obsession with anti-aging. It highlights how easily one can be replaced as soon as their demand in the market reduces.</dd>
+
+    <dt><strong>TV Show:</strong> Hi Bye Mama!</dt>
+    <dd>This TV series talks about a mother whose soul remains visible to her child. It is a heartwarming story about bonding, sacrifice, and the challenges of motherhood.</dd>
+
+    <dt><strong>Book:</strong> Atomic Habits</dt>
+    <dd>This book is ideal for anyone looking to start reading. It demonstrates how small, consistent habits can lead to an organized and successful future.</dd>
+  </dl>
+</body>
+</html>

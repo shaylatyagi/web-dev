@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 11:</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 2px solid #6495ED; /* Cornflower Blue Border */
+            padding: 10px; /* Space between content and border */
+            text-align: center; /* Center text alignment */
+        }
+
+        /* Table Row Hover Effect */
+        tr:hover {
+            background-color: #d3d3d3; /* Light Grey on Hover */
+        }
+
+        /* Table Height and Width */
+        td {
+            height: 60px; /* Adjust height */
+        }
+
+        /* Table Header Styling */
+        th {
+            background-color: #6495ED;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Image Styling */
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px; /* Rounded Corners */
+        }
+
+        /* Links */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <tr>
+            <td rowspan="2"><img src="python.png" alt="Your Choice Image"></td>
+            <td colspan="2" style="background-color: #6495ED; color: white;">Row 1, Column 3</td>
+            <td rowspan="3" style="color: green; font-weight: bold;">Keep pushing forward!</td>
+            <td rowspan="2" colspan="2" style="background-color: #6495ED; color: white;">Row 1, Column 5</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><a href="mailto:your-email@example.com">Email Me</a></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: #6495ED; color: white;"><a href="home.html">Go Home</a></td>
+            <td colspan="2"><a href="activity9.html"><img src="c.png" alt="Linked Image"></a></td>
+            <td>Row 3, Column 6</td>
+        </tr>
+        <tr>
+            <td style="background-color: #6495ED; color: white;">Row 4, Column 1</td>
+            <td style="background-color: #6495ED; color: white;">Row 4, Column 2</td>
+            <td rowspan="2" style="color: green; font-weight: bold;">Believe in yourself!</td>
+            <td colspan="2" rowspan="2" style="color: green; font-weight: bold;">You are capable of amazing things!</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" style="background-color: #6495ED; color: white;">Row 5, Column 1</td>
+            <td style="color: green; font-weight: bold;">Stay strong, stay positive!</td>
+            <td style="color: green; font-weight: bold;">You can do it!</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 5, Column 5</td>
+        </tr>
+    </table>
+</body>
+</html>
