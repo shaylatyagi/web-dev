@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        legend {
+            padding: 0 10px;
+            color: #5cb85c;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        select, textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>HTML5 Form Elements</h2>
+        <form id="eventForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </fieldset>
+
+            <label for="hobbies">Your Hobbies:</label>
+            <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="traveling"> Traveling</label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+            </select>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+
+            <label for="car">Choose a car:</label>
+            <input list="cars" id="car" name="car">
+            <datalist id="cars">
+                <option value="Volvo">
+                <option value="Saab">
+                <option value="Mercedes">
+                <option value="Audi">
+            </datalist>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("eventForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var name = document.getElementById("name").value.trim();
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+            var country = document.getElementById("country").value;
+            var comment = document.getElementById("comment").value.trim();
+            var car = document.getElementById("car").value.trim();
+
+            if (name === "") {
+                alert("Name is required.");
+                return;
+            }
+
+            if (!gender) {
+                alert("Please select a gender.");
+                return;
+            }
+
+            if (hobbies.length === 0) {
+                alert("Please select at least one hobby.");
+                return;
+            }
+
+            if (country === "") {
+                alert("Please select a country.");
+                return;
+            }
+
+            if (comment.length < 10) {
+                alert("Comment must be at least 10 characters.");
+                return;
+            }
+
+            if (car === "") {
+                alert("Please select a car.");
+                return;
+            }
+
+            alert("Form submitted successfully!");
+            this.submit(); // Submit the form if all validations pass
+        });
+    </script>
+</body>
+</html>
